@@ -1,9 +1,14 @@
 # CPP-Project
 
 CPP-Project是一个可以运行在任何Cheat的Lua库
+
 没有使用到任何Cheat的任何API 只使用ffi功能
+
 (有些功能如特征码搜索会在lua中实现)
+
 旨在帮助您更方便的使用ffi以及一些ffi进阶功能
+
+
 
 子项目:
 
