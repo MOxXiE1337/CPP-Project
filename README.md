@@ -17,6 +17,8 @@ CPP-Project是一个可以运行在任何Cheat的Lua库<br>
   * 运用到this指针的虚函数也可以使用来初始化虚函数<br> 
 注:你不可能使用InterfaceName来取到虚表
 
+介绍链接：https://hvhbbs.com/threads/8756/
+
 ### CPP_VMT_HOOK
 
 通过此库来Hook虚函数!
