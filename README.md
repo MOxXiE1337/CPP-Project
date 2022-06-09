@@ -15,7 +15,7 @@ CPP_RTTI
   没有运用到this指针的虚函数 可以直接暴力取出 然后调用
   运用到this指针的虚函数也可以使用来初始化虚函数
 
-CPP_VMT
+CPP_VMT_HOOK
 
 通过此库来Hook虚函数!
 
