@@ -89,7 +89,7 @@ function complex.SegmentInfo(moduleName)
     local dosHeader = ffi.cast("PIMAGE_DOS_HEADER",kernel32.GetModuleHandleA(moduleName));
     local ntHeader = ffi.cast("void*",ffi.cast("uintptr_t",dosHeader) + dosHeader.e_lfanew);
     local fileHeader = ffi.cast("PIMAGE_FILE_HEADER",ffi.cast("uintptr_t",ntHeader) + 4);
-    local section = ffi.cast("PIMAGE_SECTION_HEADER",ffi.cast("uintptr_t",ntHeader) + 248--[[sizeof(IMAGE_NT_HEADERS)]]) 
+    local section = ffi.cast("PIMAGE_SECTION_HEADER",ffi.cast("uintptr_t",ntHeader) + 248--[[sizeof(IMAGE_NT_HEADERS)]]) ;
 
     for u = 0,fileHeader.NumberOfSections do
         if(string.find(ffi.string(section[u].Name,8),".rdata") ~= nil) then
