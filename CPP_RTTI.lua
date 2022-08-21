@@ -207,7 +207,7 @@ function complex.GetVFTableByName(moduleName,name,offset)
     local RTTICompleteObjectLocatorPtr = complex.FindPattern(segInfo[".rdata"]["address"],segInfo[".rdata"]["size"],RTTICompleteObjectLocatorPtrPattern,{1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1});
 
     if(RTTICompleteObjectLocatorPtr == nil) then
-        print("CPP_RTTI: Failed to search rtti partern: ObjectLoatorPtr");
+        print("CPP_RTTI: Failed to search rtti partern: ObjectLocatorPtr");
         return nil;
     end
     
