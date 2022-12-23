@@ -167,7 +167,7 @@ function complex.GetVFTableByName(moduleName,name,offset)
 
     local rttiName = complex.RTTIName(name);
     local rttiNamePattern = complex.RTTINameToPattern(rttiName["class"]);
-    local rttiNamePatternS = complex.RTTINameToPattern(rttiName["class"]);
+    local rttiNamePatternS = complex.RTTINameToPattern(rttiName["struct"]);
 
     local rttiNameLocation = complex.FindPattern(segInfo[".data"]["address"],segInfo[".data"]["size"],rttiNamePattern["pattern"],rttiNamePattern["mask"]);
 
